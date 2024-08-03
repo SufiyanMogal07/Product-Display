@@ -1,0 +1,18 @@
+.nav-bar {
+    background-color: darkviolet;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+}
+
+.nav-bar ul {
+    display: flex;
+}
+
+.nav-bar ul li{
+   list-style: none;
+   padding: 25px;
+   font-size: 1.2rem;
+}
