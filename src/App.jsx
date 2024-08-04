@@ -1,6 +1,7 @@
 import { useState,useEffect, useRef } from 'react'
 import Navbar from './components/Navbar'
 import Card from './components/Card'
+import CartList from './components/CartList'
 import './App.css'
 
 function App() {
@@ -11,6 +12,12 @@ function App() {
     .then(res=>res.json())
     .then(json=> setData(json))
   }, [])
+
+  // useEffect(()=> {
+  //   if(data.length!=0) {
+  //     console.log(data)
+  //   }
+  // }, [data])
   
   return (
     <>
@@ -19,6 +26,7 @@ function App() {
         {data.map((value)=>{
           return <Card key={value.id} props={value}/>
         })}
+        <CartList/>
       </div>
     </>
   )
