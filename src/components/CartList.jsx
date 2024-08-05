@@ -34,10 +34,10 @@ function CartList() {
   return (
     <>
       <div ref={slider} className="cart-container">
-        <div className="cart-items">
           <button onClick={closeSlide} className="close-btn">
             <IoClose />
           </button>
+        <div className="cart-items">
           <h2>Cart Items:</h2>
           {cartData.map((product) => {
             return <div key={product.id} className="cart-elem">
