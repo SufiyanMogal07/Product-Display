@@ -42,9 +42,16 @@
     left: 0;
     border: none;
     background: transparent;
-    font-size: 30px;
+    background-color: red;
 }
+.close-btn > * {
+    font-size: 35px;
+    color: white;
 
+}
+.cart-items h2 {
+    margin: 20px 0;
+}
 .cart-elem {
     display: flex;
     justify-content: space-around;

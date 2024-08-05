@@ -9,3 +9,16 @@
     padding: 30px 20px;
 }
 
+.text-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.red {
+    color: red;
+}

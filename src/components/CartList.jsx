@@ -1,7 +1,7 @@
 import React from "react";
 import { useRef } from "react";
 import { FaShoppingCart } from "react-icons/fa";
-import { FaRegWindowClose } from "react-icons/fa";
+import { IoClose } from "react-icons/io5";
 import { useSelector, useDispatch } from "react-redux";
 import { removeFromCart } from "../features/products/cartSlicer";
 import "./CartList.css";
@@ -36,7 +36,7 @@ function CartList() {
       <div ref={slider} className="cart-container">
         <div className="cart-items">
           <button onClick={closeSlide} className="close-btn">
-            <FaRegWindowClose />
+            <IoClose />
           </button>
           <h2>Cart Items:</h2>
           {cartData.map((product) => {
